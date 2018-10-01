@@ -31,25 +31,52 @@
               </div>
 
               <!-- Untere Zeile (dynamisch je nach View) -->
-              <div class="bottom left">
-                  <div class="item">
-                      Song hinzufügen
-                  </div>
-                  <div class="item">
-                      Sortierung nach Titel
-                  </div>
-              </div>
-              <div class="bottom right">
-                  <input placeholder="Suchen" />
-              </div>
+              <section id="song-overview" class="hidden">
+                <!-- Topbar -->
+                  <header>
+                      <div class="left">
+                          <div class="item new-song">
+                              Song hinzufügen
+                          </div>
+                          <div class="item">
+                              Sortierung nach Titel
+                          </div>
+                      </div>
+                      <div class="right">
+                          <input placeholder="Suchen" />
+                      </div>
+                  </header>
+
+                  <!-- Hauptbereich -->
+                  <main>
+                      <div class="padding">
+                          Übersicht
+                      </div>
+                  </main>
+              </section>
           </header>
 
+
           <!-- Hauptbereich (dynamisch je nach View) -->
-          <main>
-              <div class="padding">
-                  Under Construction
-              </div>
-          </main>
+        <section id="song-display-edit" class="hidden">
+            <!-- Topbar -->
+            <header>
+                <div class="left">
+                    <!-- Leer -->
+                </div>
+                <div class="right">
+                    <div class="item overview">
+                        Zurück zur Übersicht
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hauptbereich -->
+            <main>
+                <div class="padding">
+                    Song anzeigen/bearbeiten
+                </div>
+            </main>
         </section>
     </body>
 </html>
